@@ -1,0 +1,34 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap');
+
+
+// fonts
+$base-font-size: 15;
+$base-font:'Sora', sans-serif;
+$base-font-s2:'Epilogue';
+$heading-font: 'Epilogue';
+
+
+
+// color
+$dark-gray: #1C1817; //
+$body-color: #687693;
+$white: #fff;
+$light: #6E8AA5; //
+$black: #000;
+$small-black: #30465C; //
+$cyan: #848892;
+
+$theme-primary-color: #E5F346; //
+$theme-primary-color-s2: #adb927; //
+$body-bg-color: #fff;
+$section-bg-color: #F5F6E4; //
+$section-bg-color-s2: #f9f9f9; //
+$text-color:#424740; //
+$text-light-color: #525252; //
+$heading-color: $dark-gray;
+$border-color: #DADADA; //
+$border-color-s2: #767676; //
+$border-color-s3: #AFBDA8; //

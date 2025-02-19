@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------
+18. error-404-section
+--------------------------------------------------------------*/
+.error-404-section {
+    text-align: center;
+
+    .error{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .error-message {
+        margin: 0 auto;
+        margin-top: 50px;
+        max-width: 700px;
+
+        @include media-query(991px) {
+            margin-top: 50px;
+            padding: 0 100px;
+        }
+
+        @include media-query(767px) {
+            padding: 0;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-size: calc-rem-value(30);
+            margin: 0 0 0.8em;
+        }
+
+        p {
+            margin-bottom: 1.8em;
+            color: $text-light-color;
+        }
+
+        .theme-btn {
+            padding: 17px 40px;
+            border: none;
+            background: $theme-primary-color;
+            color: $dark-gray;
+            transition: all 0.3s;
+            outline: none;
+
+            &::before {
+
+                border: 1px dashed $theme-primary-color;
+            }
+
+        }
+    }
+
+}

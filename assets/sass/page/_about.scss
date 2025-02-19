@@ -1,0 +1,157 @@
+/*===========================
+6. About-Page
+===========================*/
+
+/*3.3 wpo-fun-fact-section */
+.wpo-fun-fact-section,
+.wpo-fun-fact-section-s2{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .wpo-fun-fact-grids {
+        border: 1px solid $border-color;
+        padding: 20px;
+    }
+
+    .wpo-fun-fact-grids .grid {
+        width: 25%;
+        float: left;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        border-left: 1px solid $border-color;
+        padding: 30px 0;
+        padding-bottom: 19px;
+
+        @include media-query(767px) {
+            border: 1px solid $border-color;
+            border-bottom: 1px solid transparent;
+        }
+
+        &:nth-child(1) {
+            @include media-query(991px) {
+                border-bottom: 1px solid transparent;
+            }
+        }
+
+        &:nth-child(4) {
+            border-right: 1px solid $border-color;
+
+            @include media-query(767px) {
+                border-bottom: 1px solid $border-color;
+            }
+        }
+
+        &:nth-child(2) {
+            @include media-query(991px) {
+                border-right: 1px solid $border-color;
+                border-bottom: 1px solid transparent;
+            }
+        }
+
+        @include media-query(991px) {
+            width: 50%;
+        }
+
+        @include media-query(767px) {
+            width: 100%;
+            float: none;
+        }
+    }
+
+    .grid {
+
+        h3 {
+            margin: 0 0 0.2em;
+            font-family: $heading-font;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 60px;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: $dark-gray;
+
+            @include media-query(767px) {
+                line-height: 45px;
+                font-size: 35px;
+            }
+        }
+    }
+
+
+
+    .grid h3+p {
+        text-transform: uppercase;
+        color: $dark-gray;
+        font-family: $heading-font;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+
+        @include media-query(767px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.wpo-fun-fact-section {
+    background: $section-bg-color;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: url(../images/noice.png);
+        z-index: -1;
+    }
+
+    .wpo-fun-fact-grids {
+        border-color: #b1a9a7;
+
+        .grid {
+            border-color: #b1a9a7;
+            
+            &:nth-child(4) {
+                border-color: #b1a9a7;
+            }
+        }
+    }
+
+}
+
+
+/* 3.11 partners-section   */
+
+.partners-section {
+    padding: 100px 0;
+
+    @media(max-width:991px) {
+        padding: 70px 0 50px;
+    }
+
+    .partners-slider {
+        .grid {
+            img {
+                filter: grayscale(100%);
+                margin: 0 auto;
+            }
+        }
+
+        .owl-item img {
+            width: unset;
+        }
+
+        .owl-nav {
+            display: none;
+        }
+    }
+}
