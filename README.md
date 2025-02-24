@@ -26,7 +26,7 @@ At Suqat, we **redefine luxurious living**, ensuring a **superior lifestyle expe
 ---
 
 ## 📸 Preview  
-![Suqat Website Screenshot](your-image-link-here)  
+![Suqat Website Screenshot](image.png)  
 
 ---
 
